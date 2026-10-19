@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171714">
+  <meta name="description" content="CROWN is an independent social and creative agency. We design influence across brands, narratives, and culture.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CROWN Social® — Ideas worth following">
+  <meta property="og:description" content="Social strategy, creative, and production built to work together. Explore CROWN at crownsocial.com.">
+  <title>CROWN Social® — Ideas worth following</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; --ink: #171714; --paper: #eee9dc; --muted: #aaa89e; --line: #57574f; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--ink); color: var(--paper); font-family: Arial, Helvetica, sans-serif; }
+    a { color: inherit; }
+    a:focus-visible { outline: 2px solid var(--paper); outline-offset: 5px; }
+    .page { min-height: 100svh; display: flex; flex-direction: column; padding: clamp(20px, 3.1vw, 48px); position: relative; overflow: hidden; }
+    .page::before { content: ""; position: absolute; width: min(68vw, 900px); aspect-ratio: 1; border: 1px solid rgba(238,233,220,.08); border-radius: 50%; right: -23vw; top: 11vh; pointer-events: none; }
+    .page::after { content: ""; position: absolute; width: min(42vw, 620px); aspect-ratio: 1; border: 1px solid rgba(238,233,220,.08); border-radius: 50%; right: -10vw; top: 25vh; pointer-events: none; }
+    header, footer { display: flex; align-items: center; justify-content: space-between; gap: 24px; position: relative; z-index: 1; }
+    header { border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+    .mark { font-weight: 900; letter-spacing: -.075em; font-size: clamp(24px, 2.5vw, 40px); line-height: 1; text-decoration: none; }
+    .mark sup { font-size: .23em; letter-spacing: 0; vertical-align: top; margin-left: .27em; }
+    .top-link, .eyebrow, .kicker, .footnote, footer { font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .top-link { text-decoration: none; white-space: nowrap; }
+    .top-link span { font-size: 17px; margin-left: 8px; vertical-align: -1px; }
+    main { width: 100%; max-width: 1460px; margin: auto; padding: clamp(80px, 13vh, 160px) 0 clamp(70px, 10vh, 130px); position: relative; z-index: 1; }
+    .eyebrow { color: var(--muted); margin: 0 0 clamp(24px, 4vw, 56px); }
+    h1 { max-width: 13ch; font-size: clamp(61px, 11.2vw, 180px); line-height: .86; letter-spacing: -.087em; margin: 0; font-weight: 900; }
+    h1 em { font-family: Georgia, 'Times New Roman', serif; font-size: .89em; font-weight: 400; letter-spacing: -.075em; }
+    .lower { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 360px); align-items: end; gap: 48px; margin-top: clamp(58px, 8vw, 110px); }
+    .statement { max-width: 650px; font-size: clamp(20px, 2.2vw, 32px); line-height: 1.25; letter-spacing: -.035em; margin: 0; }
+    .right { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+    .kicker { color: var(--muted); line-height: 1.7; margin: 0; }
+    .cta { display: inline-flex; align-items: center; justify-content: space-between; gap: 38px; min-width: 240px; background: var(--paper); color: var(--ink); border: 1px solid var(--paper); padding: 18px 20px; text-decoration: none; font-size: 12px; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; transition: background .2s, color .2s, transform .2s; }
+    .cta:hover { background: transparent; color: var(--paper); transform: translateY(-3px); }
+    .cta span { font-size: 20px; font-weight: 400; line-height: 0; }
+    footer { border-top: 1px solid var(--line); padding-top: 20px; color: var(--muted); line-height: 1.5; }
+    footer p { margin: 0; }
+    @media (max-width: 700px) {
+      .page { min-height: 100svh; }
+      .page::before { width: 110vw; right: -55vw; top: 20vh; }
+      .page::after { width: 70vw; right: -31vw; top: 31vh; }
+      main { padding: 100px 0 90px; }
+      h1 { font-size: clamp(58px, 13.3vw, 96px); }
+      .lower { grid-template-columns: 1fr; gap: 32px; margin-top: 58px; }
+      .right { gap: 18px; }
+      footer { align-items: flex-start; flex-direction: column; gap: 10px; }
+    }
+    @media (max-width: 390px) { .top-link { font-size: 9px; } h1 { font-size: 14vw; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cta { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="mark" href="https://crownsocial.com/" aria-label="CROWN Social homepage">CROWN<sup>®</sup></a>
+      <a class="top-link" href="https://crownsocial.com/">Enter the agency <span aria-hidden="true">↗</span></a>
+    </header>
+    <main>
+      <p class="eyebrow">Independent social &amp; creative agency / Seattle + Los Angeles</p>
+      <h1>Ideas worth <em>following.</em></h1>
+      <div class="lower">
+        <p class="statement">We design influence across brands, narratives, and culture.</p>
+        <div class="right">
+          <p class="kicker">Social strategy, creative, and production, built to work together.</p>
+          <a class="cta" href="https://crownsocial.com/">Explore CROWN <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Move hearts. Steal minds.</p>
+      <p>Find the full story at <a href="https://crownsocial.com/">crownsocial.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
